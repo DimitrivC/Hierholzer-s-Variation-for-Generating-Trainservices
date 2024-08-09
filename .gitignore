@@ -1,0 +1,6 @@
+# ignore pyc file types
+*.pyc
+
+# ignore all .txt files, except requirements
+*.txt
+!requirements.txt
