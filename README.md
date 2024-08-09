@@ -6,13 +6,13 @@ Python program in which a railway network (including stations and connections be
 
 The algorithm deviates from Hierholzer's in, among other things, choosing random starting nodes with only one edge and some optimization so as to maximize the following score function:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(score = p\) \* \( 10000 - (t \) \* \(20 + min/100000)\)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**score** = *p* × 10000 − (*t* × 20 + *min*/100000)
 
 where:
 
-- \( p \) is the percentage of connections traversed by the service that are marked as critical, with a connection being critical just in case it's linked to at least one critical station, i.e., a station that's deemed particularly important;
-- \( t \) is the number of tracks in the service;
-- \( \text{min} \) is the total time of the service.
+- *p* is the percentage of connections traversed by the service that are marked as critical, with a connection being critical just in case it's linked to at least one critical station, i.e., a station that's deemed particularly important;
+- *t* is the number of tracks in the service;
+- *min* is the total time of the service.
 
 <img src="results/plots/track_0.png" alt="Graph with track" style="width: 450px; margin: auto; display: block;" />
 
